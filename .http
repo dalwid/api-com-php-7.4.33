@@ -1,0 +1,25 @@
+
+
+POST  http://localhost/api/usuarios/login HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+login=avraham
+&senha=123457
+
+###
+
+GET  http://localhost/api/clientes/listar HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJuYW1lIjoiQXZyYWhhbSBQZXJldHoiLCJleHBpcmVzX2luIjoxNjc0MzA3MjQ2fQ.APTVUJ9TG59lGHqsNQFQw6WNcDfi-Y-4jtOTgTYHwT0
+
+###
+
+GET  http://localhost/api/clientes/listar/2 HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJuYW1lIjoiQXZyYWhhbSBQZXJldHoiLCJleHBpcmVzX2luIjoxNjc0MzA3MjQ2fQ.APTVUJ9TG59lGHqsNQFQw6WNcDfi-Y-4jtOTgTYHwT0
+###
+
+POST  http://localhost/api/clientes/atualizar/2 HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJuYW1lIjoiQXZyYWhhbSBQZXJldHoiLCJleHBpcmVzX2luIjoxNjc0MzA3MjQ2fQ.APTVUJ9TG59lGHqsNQFQw6WNcDfi-Y-4jtOTgTYHwT0
+Content-Type: application/x-www-form-urlencoded
+
+_method=PUT 
+&nome=Vanesssa
